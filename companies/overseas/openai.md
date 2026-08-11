@@ -6,6 +6,8 @@
 
 - ChatGPT 将 **Saved Memories** 与 **Reference Chat History** 分开：前者是明确或自动保存、持续考虑的要点；后者从历史聊天中动态寻找相关信息。
 - Memory 可使用聊天、文件和已连接应用的上下文；2026 年更新增加 **Memory Sources**，允许用户查看某次回答引用的 saved memory、历史聊天、自定义指令，以及部分账号的文件/Gmail。
+- 2026 年官方披露的 **Dreaming** 后台综合机制会跨多次聊天维护持续更新的 memory state，处理陈旧与矛盾信息；它不只是查询时检索原始聊天。
+- Projects 支持项目内聊天、文件与指令，并可使用 project-only memory，将项目上下文与全局个人上下文隔离。
 - 用户可查看、修改、删除 memory，关闭 saved memory 或 chat history，并使用 Temporary Chat 避免读取和写入。
 - ChatGPT Search / Deep Research / Agent 可与上述个性化上下文组合，用于推荐、研究和下一步行动。
 
@@ -14,7 +16,7 @@
 | 层级 | 产品机制 | 证据 |
 |---|---|---|
 | 短期 | 当前对话上下文、Agent 工具状态 | 已上线 |
-| 中期 | Reference Chat History、Projects/任务历史、文件与连接器相关上下文 | 已上线；具体内部结构未知 |
+| 中期 | Reference Chat History、Projects/project-only memory、文件与连接器相关上下文 | 已上线 |
 | 长期 | Saved Memories、自定义指令 | 已上线 |
 
 ## Agentic Search 注入点
@@ -30,10 +32,12 @@
 
 - Saved Memories 与 chat history 是不同控制面；saved memory 与聊天记录分开保存。
 - Memory Sources 展示回答个性化所用的部分来源。
+- Apps with sync 会建立权限感知的搜索索引；断开应用后的索引删除遵循单独的数据控制周期。
+- Dreaming 表明长期 memory 有独立的后台 consolidation 路径。
 
 **合理推断：**
 
-- 存在 memory extraction / summary、历史对话 retrieval、相关性过滤与 context assembly。
+- 存在 memory extraction、consolidation、历史对话 retrieval、相关性过滤与 context assembly。
 - Search/Agent 应在执行前通过策略层决定是否引用 memory；官方未公开 ranking 特征或存储架构。
 
 ## 优势
@@ -51,6 +55,9 @@
 ## Sources
 
 - [OpenAI Memory FAQ](https://help.openai.com/en/articles/8590148)
+- [Dreaming memory architecture](https://openai.com/index/chatgpt-memory-dreaming/)
 - [Reference saved memories / chat history](https://help.openai.com/en/articles/11146739-how-does-reference-saved-memories-work)
+- [Projects in ChatGPT](https://help.openai.com/en/articles/10169521-using-projects-in-chatgp)
+- [Apps with sync](https://help.openai.com/en/articles/10847137)
 - [ChatGPT release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes-2026-05-17-OpenAI)
 - [Introducing ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent/)

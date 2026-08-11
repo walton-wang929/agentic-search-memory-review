@@ -55,6 +55,18 @@
 5. 分别作用于 query rewrite、搜索过滤、候选重排、生成和工具参数。
 6. 输出 provenance，支持 UI 解释「使用了哪些偏好」。
 
+### Personalization permission levels
+
+Router 应同时输出意图和个性化许可：
+
+- `P0`：禁用 memory，只返回通用结果；适合部分敏感或合规场景。
+- `P1`：只使用当前会话。
+- `P2`：允许当前 task/project memory。
+- `P3`：允许长期偏好，但不得改变客观事实。
+- `P4`：用户明确授权的跨应用深度个性化。
+
+事实型、法律、医疗、安全等请求默认降低级别；用户当前明确选择可覆盖系统默认。
+
 ## 写入路径
 
 1. 捕获显式陈述、行为反馈和任务结果。
@@ -82,6 +94,12 @@
 - Prompt/RAG 易控制、可删除、可解释，适合大多数产品。
 - Adapter/finetune 能降低延迟但难以单用户更新与彻底遗忘。
 - 推荐把用户事实保留在外部 memory plane；模型级学习只吸收匿名、聚合的通用规律。
+
+### Source of truth vs derived indexes
+
+- 关系型/事件存储保存版本、权限、双时态与原始 evidence，是权威数据源。
+- 向量、倒排、图索引和 profile summary 都是可重建的派生物。
+- 删除和 schema/embedding 升级应从权威记录向所有派生索引传播。
 
 ## 非功能目标
 

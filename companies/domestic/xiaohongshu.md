@@ -13,6 +13,7 @@
 - 是否存在类似 ChatGPT Saved Memories 的独立长期记忆管理页。
 - 点赞/收藏、搜索和交易行为是否自动形成 Agent 可读取的长期 profile。
 - 点点、问一问与主站推荐画像之间的数据边界和授权策略。
+- 官方招聘信息已将 memory、个性化、context 优化和 AI 搜索列为下一代 C 端 Agent 方向；这是建设信号，不能当作已上线证明。
 
 ## Memory 分层映射
 
@@ -54,5 +55,8 @@
 - [小红书 PC 端点点：多轮对话与收藏导入](https://news.aibase.cn/news/28453)
 - [小红书在 PC 端上线 AI 搜索助手点点](https://www.163.com/dy/article/KU49KMK305118I96.html)
 - [小红书收购点点](https://36kr.com/p/3580622060158088)
+- [小红书 AI 搜索岗位：RAG、Agent、引用与评估](https://job.xiaohongshu.com/social/position/18653)
+- [REDstar：C 端 Agent memory 与个性化方向](https://job.xiaohongshu.com/campus/redstar)
+- [用户理解：统一表征与兴趣变迁](https://job.xiaohongshu.com/campus/position/20868)
 
 > 国内公司缺少完整官方 memory 技术披露；本页对内部架构不作确定性断言。

@@ -7,7 +7,10 @@ Last verified: 2026-08-11
 ### OpenAI
 
 - [Memory FAQ](https://help.openai.com/en/articles/8590148)
+- [Dreaming memory architecture](https://openai.com/index/chatgpt-memory-dreaming/)
 - [Saved memories and chat history](https://help.openai.com/en/articles/11146739-how-does-reference-saved-memories-work)
+- [Projects in ChatGPT](https://help.openai.com/en/articles/10169521-using-projects-in-chatgp)
+- [Apps with sync](https://help.openai.com/en/articles/10847137)
 - [ChatGPT release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes-2026-05-17-OpenAI)
 - [ChatGPT agent](https://openai.com/index/introducing-chatgpt-agent/)
 
@@ -32,6 +35,8 @@ Last verified: 2026-08-11
 - [Claude release notes](https://docs.anthropic.com/en/release-notes/claude-apps)
 - [RAG for Projects](https://support.anthropic.com/en/articles/11473015-retrieval-)
 - [Personalization features](https://support.anthropic.com/en/articles/10185728-understanding-claude-s-personalization-features)
+- [Claude Code memory](https://docs.anthropic.com/en/docs/claude-code/memory)
+- [Context management and memory tool](https://www.anthropic.com/news/context-management)
 
 ### ByteDance / Doubao
 
@@ -41,6 +46,30 @@ Last verified: 2026-08-11
 ### Alibaba
 
 - [PolarDB-X：千问背后的记忆引擎](https://developer.aliyun.com/article/1725199)
+- [千问 APP 记忆存储实践](https://developer.aliyun.com/article/1731409)
+- [千问与淘宝互通及历史订单个性化](https://www.alibabagroup.com/zh-HK/document-1991231293551017984)
+
+### Tencent
+
+- [腾讯云 Agent Memory 四层架构](https://cloud.tencent.com/document/product/1813/132100)
+- [腾讯云 Agent Memory API](https://cloud.tencent.com/document/product/1813/132001)
+
+### Baidu
+
+- [文小言记忆簿规则](https://yiyan.baidu.com/docUrl/EB118_infoprotect/llf9tqa4r)
+- [ERNIE 用户记忆 CRUD API](https://ai.baidu.com/ai-doc/WENXINWORKSHOP/Km7aaevzl)
+- [用户记忆类型](https://ai.baidu.com/ai-doc/WENXINWORKSHOP/5m7a47isq)
+
+## Technical references
+
+- [RRF: Reciprocal Rank Fusion, SIGIR 2009](https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf)
+- [ColBERT, SIGIR 2020](https://dl.acm.org/doi/10.1145/3397271.3401075)
+- [MemoryBank](https://arxiv.org/abs/2305.10250)
+- [Generative Agents](https://research.google/pubs/generative-agents-interactive-simulacra-of-human-behavior/)
+- [LaMP personalization benchmark](https://arxiv.org/abs/2304.11406)
+- [LongMemEval](https://arxiv.org/abs/2410.10813)
+- [NIST AI RMF 1.0](https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf)
+- [OWASP Top 10 for LLM Applications 2025](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf)
 
 ## Secondary product reporting
 

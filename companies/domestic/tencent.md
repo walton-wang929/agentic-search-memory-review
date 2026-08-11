@@ -13,6 +13,7 @@
 - 元宝是否具备类似 Saved Memories 的长期用户记忆管理页，以及不同版本/入口的覆盖范围。
 - 元宝能否默认读取私人微信聊天、联系人或全量收藏；没有官方证据时不应假设可以。
 - 微信搜一搜的搜索/内容画像如何进入元宝 Agent。
+- 微信官方说明 AI 搜索不使用朋友圈和个人聊天等私密内容；普通搜一搜的个性化搜索结果可单独关闭。
 
 ## Memory 分层映射
 
@@ -34,6 +35,7 @@
 - 微信生态更适合「按需授权读取」而非默认汇总私人数据。
 - 元宝应把个人微信内容、公开内容兴趣和 Agent 自身历史严格分 scope。
 - 小程序与交易工具调用需要独立权限、确认和审计。
+- 腾讯云 Agent Memory 已公开原始对话、原子记忆、场景记忆、核心记忆的分层架构，并支持关键词 + 向量 + RRF 检索、来源下钻、订正与删除；这证明技术底座存在，但不能直接等同于元宝消费端已使用。
 
 ## 优势
 
@@ -50,5 +52,9 @@
 
 - [元宝进入微信与生态入口报道](https://www.36kr.com/p/3480634161994631)
 - [腾讯元宝产品入口](https://yuanbao.tencent.com/)
+- [微信隐私保护指引](https://weixin.qq.com/cgi-bin/readtemplate?lang=zhCN&s=privacy&t=weixin_agreement)
+- [微信回应 AI 搜索不使用聊天与朋友圈](https://news.qq.com/rain/a/20250220A000NC00)
+- [腾讯云 Agent Memory 四层架构](https://cloud.tencent.com/document/product/1813/132100)
+- [腾讯云 Agent Memory API](https://cloud.tencent.com/document/product/1813/132001)
 
 > 媒体文章中把“聊天记录功能”称为“记忆”的情况很多；本页不把历史记录等同于可检索的长期个性化 memory。

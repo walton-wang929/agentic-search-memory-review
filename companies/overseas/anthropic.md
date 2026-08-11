@@ -11,7 +11,9 @@
 
 ### Claude Code
 
-- Claude Code 的持久上下文以 `CLAUDE.md` / rules、项目文件、会话与本地/项目 memory 为核心。
+- Claude Code 的持久上下文以 `CLAUDE.md` / rules、项目文件、会话与 auto memory 为核心。
+- `CLAUDE.md` 由用户或团队维护持久规则；auto memory 由 Claude 自动记录构建命令、调试结论、架构和偏好，并在后续会话加载。
+- Memory 支持 user、project、local 等作用域，可按项目关闭；MCP 外部检索与本地 memory 是不同数据通道。
 - 它展示了 domain-scoped memory 的强形态：规则与经验按用户、项目、仓库路径隔离，并直接影响代码搜索、修改和测试行动。
 
 ## Memory 分层映射
@@ -34,6 +36,7 @@
 
 - Project 之间 memory 隔离；Project knowledge 可自动切换到 RAG。
 - 新版 memory 使用可读取和更新的独立分类条目。
+- 开发平台公开了文件式 memory tool 的 create/read/update/delete，以及 context editing / compaction 与外部 memory 配合的机制。
 
 **合理推断：**
 
@@ -59,3 +62,5 @@
 - [Claude release notes](https://docs.anthropic.com/en/release-notes/claude-apps)
 - [RAG for Projects](https://support.anthropic.com/en/articles/11473015-retrieval-)
 - [Claude personalization features](https://support.anthropic.com/en/articles/10185728-understanding-claude-s-personalization-features)
+- [Claude Code memory](https://docs.anthropic.com/en/docs/claude-code/memory)
+- [Context management and memory tool](https://www.anthropic.com/news/context-management)

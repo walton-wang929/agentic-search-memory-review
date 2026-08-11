@@ -65,7 +65,8 @@
 - [字节跳动：抖音 / 豆包](./companies/domestic/bytedance.md)
 - [腾讯：微信搜一搜 / 元宝](./companies/domestic/tencent.md)
 - [阿里：夸克 / 千问 / 淘宝](./companies/domestic/alibaba.md)
-- [百度及其他](./companies/domestic/others.md)
+- [百度：文小言 / 百度搜索 AI 伙伴](./companies/domestic/baidu.md)
+- [其他国内玩家](./companies/domestic/others.md)
 
 ### 海外
 

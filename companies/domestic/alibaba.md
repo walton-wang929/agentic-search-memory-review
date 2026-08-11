@@ -6,6 +6,7 @@
 
 - 千问逐步连接淘宝、闪购、旅行等服务，从信息搜索进入比选、下单、履约和售后。
 - 阿里云公开技术文章称，千问相关场景使用短期上下文、长期摘要/偏好与向量检索，并由分布式数据库与搜索能力支撑大规模 memory。
+- 阿里云公开的千问 APP 实践进一步描述了短期/长期记忆统一管理、自动抽取、摘要提炼、过期淘汰，以及关键词、向量和条件组合检索。
 - PolarDB-X 公开文章称其支撑千问长记忆、组对话、客服等场景，提供结构化与语义数据融合。
 - 淘宝的订单、商品、地址、价格与售后事件天然构成强 episodic/task memory。
 
@@ -51,5 +52,8 @@
 ## Sources
 
 - [PolarDB-X：千问背后的记忆引擎](https://developer.aliyun.com/article/1725199)
+- [千问 APP 记忆存储实践](https://developer.aliyun.com/article/1731409)
+- [阿里：千问与淘宝互通及历史订单个性化](https://www.alibabagroup.com/zh-HK/document-1991231293551017984)
+- [千问 Agentic AI 与分层多智能体](https://www.alibabagroup.com/zh-HK/document-1948497434959151104)
 - [千问与淘宝整合报道](https://www.36kr.com/p/3805692991462912)
 - [千问、淘宝全面打通报道](https://www.163.com/dy/article/KSL5A1Q405198NMR.html)
