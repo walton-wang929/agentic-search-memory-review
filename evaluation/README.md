@@ -2,6 +2,8 @@
 
 个性化收益不能只看点击率。评测应同时覆盖记忆质量、搜索质量、任务结果、用户控制与长期伤害。
 
+公开论文、线上 A/B、MemoryArena、MemoryAgentBench、BEAM、LongMemEval 和 LoCoMo 的量化对比见 [Memory 模块量化表现与 Benchmark Review](./memory-benchmarks-quantitative.md)。
+
 ## 1. Memory 写入质量
 
 - candidate extraction precision / recall

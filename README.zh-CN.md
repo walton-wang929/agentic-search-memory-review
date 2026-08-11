@@ -57,6 +57,11 @@
 
 系统总览：[architecture/README.md](./architecture/README.md)。
 
+## 专项研究
+
+- [TikTok 经验决策搜索：Memory-Aware Agentic MVP](./case-studies/tiktok-experience-decision-mvp.md)
+- [Memory 模块量化表现与 Benchmark Review](./evaluation/memory-benchmarks-quantitative.md)
+
 ## 公司 Review
 
 ### 国内
@@ -84,9 +89,11 @@
 2. [产品创新蓝图](./framework/product-blueprint.md)
 3. [端到端架构](./architecture/README.md)
 4. [ChatGPT 个性化 Agentic Search 案例](./case-studies/chatgpt-personalized-search.md)
-5. 各公司产品页
-6. [评测框架](./evaluation/README.md)
-7. [来源与证据等级](./meta/sources.md)
+5. [TikTok 经验决策搜索 MVP](./case-studies/tiktok-experience-decision-mvp.md)
+6. 各公司产品页
+7. [评测框架](./evaluation/README.md)
+8. [量化 Benchmark Review](./evaluation/memory-benchmarks-quantitative.md)
+9. [来源与证据等级](./meta/sources.md)
 
 ## 事实标记
 
